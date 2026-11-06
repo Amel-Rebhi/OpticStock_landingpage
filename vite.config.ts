@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/OpticStock_landingpage/', // Le nom exact de votre dépôt GitHub
+  base: '/OpticStock_landingpage/', 
 });
