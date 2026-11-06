@@ -1,4 +1,5 @@
 import LandingPage from './LandingPage';
+import './index.css';
 
 function App() {
   const handleGoToApp = () => {
