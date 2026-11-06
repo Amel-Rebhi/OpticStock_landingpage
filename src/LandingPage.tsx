@@ -3,6 +3,7 @@ import * as THREE from 'three';
 
 export interface LandingPageProps {
   onEnterApp?: () => void;
+   githubUrl?: string;
 }
 
 interface Embedded3DViewerProps {
@@ -10,7 +11,8 @@ interface Embedded3DViewerProps {
 }
 
 // --- COMPOSANT LANDING PAGE (Exporté par défaut) ---
-export default function LandingPage({ onEnterApp }: LandingPageProps): React.JSX.Element {
+export default function LandingPage({ onEnterApp,
+    githubUrl = 'https://github.com/Amel-Rebhi/OpticStock_landingpage' }: LandingPageProps): React.JSX.Element {
   const [email, setEmail] = useState<string>('');
   const [siteName, setSiteName] = useState<string>('');
   const [registered, setRegistered] = useState<boolean>(false);
